@@ -28,26 +28,32 @@
     }
 
     .milestone {
-      position: relative;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 20px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: #000;
+      position: relative;
+    }
+
+    .milestone img {
+      max-width: 90%;
+      max-height: 60vh;
+      object-fit: contain;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+      margin-bottom: 20px;
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.65);
-      padding: 30px;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 20px;
       border-radius: 15px;
-      box-shadow: 0 0 20px #00ffcc;
       max-width: 900px;
+      box-shadow: 0 0 20px #00ffcc;
     }
 
     .overlay h2 {
@@ -82,7 +88,8 @@
     <p>From the first machines to the digital age</p>
   </header>
 
-  <section class="milestone" style="background-image: url('001.jpg');">
+  <section class="milestone">
+    <img src="001.jpg" alt="ENIAC">
     <div class="overlay">
       <h2>ENIAC – 1945</h2>
       <p><strong>Brief Description:</strong> The ENIAC was the first general-purpose electronic computer, replacing electromechanical machines. It used thousands of vacuum tubes for calculation.</p>
@@ -90,7 +97,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('002.jpg');">
+  <section class="milestone">
+    <img src="002.jpg" alt="Transistor">
     <div class="overlay">
       <h2>Transistor – 1947</h2>
       <p><strong>Brief Description:</strong> The invention of the transistor replaced bulky vacuum tubes. It was smaller, faster, and consumed less power.</p>
@@ -98,7 +106,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('003.jpg');">
+  <section class="milestone">
+    <img src="003.jpg" alt="Integrated Circuit">
     <div class="overlay">
       <h2>Integrated Circuit – 1958</h2>
       <p><strong>Brief Description:</strong> The integrated circuit combined multiple transistors into a single chip, replacing individual transistor setups.</p>
@@ -106,7 +115,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('004.jpg');">
+  <section class="milestone">
+    <img src="004.jpg" alt="Microprocessor">
     <div class="overlay">
       <h2>Microprocessor – 1971</h2>
       <p><strong>Brief Description:</strong> Intel introduced the first microprocessor, combining CPU functions onto a single chip. It replaced complex multi-board processors.</p>
@@ -114,7 +124,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('005.jpg');">
+  <section class="milestone">
+    <img src="005.jpg" alt="Personal Computer">
     <div class="overlay">
       <h2>Personal Computer – 1981</h2>
       <p><strong>Brief Description:</strong> IBM launched its first PC, making computing accessible to homes and offices. It replaced large mainframes for everyday use.</p>
@@ -122,7 +133,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('006.jpg');">
+  <section class="milestone">
+    <img src="006.jpg" alt="World Wide Web">
     <div class="overlay">
       <h2>World Wide Web – 1991</h2>
       <p><strong>Brief Description:</strong> Tim Berners-Lee invented the World Wide Web, connecting information through hyperlinks. It replaced isolated computer systems.</p>
@@ -130,7 +142,8 @@
     </div>
   </section>
 
-  <section class="milestone" style="background-image: url('007.jpg');">
+  <section class="milestone">
+    <img src="007.jpg" alt="Smartphones">
     <div class="overlay">
       <h2>Smartphones – 2007</h2>
       <p><strong>Brief Description:</strong> The iPhone introduced the modern smartphone, merging computing with mobile telephony. It replaced simple feature phones.</p>
@@ -139,7 +152,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Milestones in Computer History | Dorado,Panopio,Omabay</p>
+    <p>&copy; 2025 Milestones in Computer History | Project Demo</p>
   </footer>
 </body>
 </html>
